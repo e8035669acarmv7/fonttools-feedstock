@@ -23,7 +23,7 @@ build:
     - pyftinspect = fontTools.inspect:main
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
   run:
