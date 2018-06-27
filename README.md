@@ -19,12 +19,15 @@ Mac-specific formats. The project has a BSD-style open-source licence.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/fonttools-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/fonttools-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/fonttools-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/fonttools-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fonttools/badges/version.svg)](https://anaconda.org/conda-forge/fonttools)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fonttools/badges/downloads.svg)](https://anaconda.org/conda-forge/fonttools)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-fonttools-green.svg)](https://anaconda.org/conda-forge/fonttools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/fonttools.svg)](https://anaconda.org/conda-forge/fonttools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/fonttools.svg)](https://anaconda.org/conda-forge/fonttools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/fonttools.svg)](https://anaconda.org/conda-forge/fonttools) |
 
 Installing fonttools
 ====================
