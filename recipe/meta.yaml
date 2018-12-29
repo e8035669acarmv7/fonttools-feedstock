@@ -1,6 +1,6 @@
 {% set name = "fonttools" %}
-{% set version = "3.30.0" %}
-{% set sha256 = "95e86519b18183dc3c230e9b2233a69add3f631ec43c8725a553844a7d12c2c4" %}
+{% set version = "3.34.2" %}
+{% set sha256 = "9fa6596ec04410dc75f2b9a5df9ca71abac85a7a5a8502f57cc72166a5401aaa" %}
 
 package:
   name: {{ name|lower }}
