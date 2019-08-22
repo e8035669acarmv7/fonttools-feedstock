@@ -1,6 +1,6 @@
 {% set name = "fonttools" %}
-{% set version = "3.44.0" %}
-{% set sha256 = "b72cc654e07219d8d7d8c624d1af13cec6f6cc2a51189f8385c295725e4ac36c" %}
+{% set version = "4.0.0" %}
+{% set sha256 = "9415fda795f4ff8e89d41ab907388ec5a4c236f4774ea65a746d8c1e4e839d3d" %}
 
 package:
   name: {{ name|lower }}
@@ -24,10 +24,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - brotli
     - unicodedata2
     - munkres
