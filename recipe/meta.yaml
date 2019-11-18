@@ -1,6 +1,6 @@
 {% set name = "fonttools" %}
-{% set version = "4.0.2" %}
-{% set sha256 = "bb9bf6b5b4ded33e0d9f823e5ae2e1fa643af4d614915660abe3853a9a6931cd" %}
+{% set version = "4.1.0" %}
+{% set sha256 = "683d4bebf9a5976e3b7d46a64a90708f6fcf8e13cf770e5a0b0d258a02c11d76" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - fonttools = fontTools.__main__:main
     - ttx = fontTools.ttx:main
