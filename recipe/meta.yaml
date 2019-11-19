@@ -29,7 +29,7 @@ requirements:
   run:
     - python >=3.6
     - brotli
-    - unicodedata2
+    - unicodedata2 >=12.1.0
     - munkres
 
 test:
