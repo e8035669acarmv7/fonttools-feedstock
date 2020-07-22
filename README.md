@@ -5,7 +5,7 @@ Home: https://github.com/fonttools/fonttools
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: fontTools is a library for manipulating fonts, written in Python.
 
