@@ -5,9 +5,13 @@ Home: https://github.com/fonttools/fonttools
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fonttools-feedstock/blob/master/LICENSE.txt)
 
 Summary: fontTools is a library for manipulating fonts, written in Python.
+
+Development: https://github.com/fonttools/fonttools
+
+Documentation: https://groups.google.com/forum/#!forum/fonttools
 
 fontTools is a library for manipulating fonts, written in Python. The
 project includes the TTX tool, that can convert TrueType and OpenType
