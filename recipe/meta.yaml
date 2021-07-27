@@ -1,47 +1,50 @@
 {% set name = "fonttools" %}
-{% set version = "4.17.1" %}
-{% set sha256 = "7097b194babc05c8decfff6cbc81b184221fdcfbda568630fe441c63dadb3ab4" %}
+{% set version = "4.25.2" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.zip
-  url: https://github.com/{{ name }}/{{ name }}/releases/download/{{ version }}/{{ name }}-{{ version }}.zip
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fonttools-{{ version }}.zip
+  sha256: 507f8e027967fe4ebfa913856b3acc6b77201e67d6a6978d3666863cbba884c3
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: true   # [py2k]
   entry_points:
     - fonttools = fontTools.__main__:main
     - ttx = fontTools.ttx:main
     - pyftsubset = fontTools.subset:main
     - pyftmerge = fontTools.merge:main
-    - pyftinspect = fontTools.inspect:main
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
+  build:
+    - {{ compiler('c') }}
   host:
-    - python >=3.6
     - pip
+    - python
   run:
-    - python >=3.6
+    - python
     - brotli
-    - unicodedata2 >=12.1.0
     - munkres
+    - unicodedata2 >=12.1.0  # [py<=37]
 
 test:
   imports:
     - fontTools
-    - fontTools.ttLib
+    - fontTools.cffLib
   commands:
+    - pip check
+    - fonttools --help
     - fonttools subset --help
     - ttx -h
     - pyftsubset --help
     # pyftmerge has no help option
-    # pyftinspect requires gtk
+  requires:
+    - pip
 
 about:
   home: https://github.com/fonttools/fonttools
