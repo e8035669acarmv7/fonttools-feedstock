@@ -24,6 +24,7 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
+    - cython
     - pip
     - python
   run:
