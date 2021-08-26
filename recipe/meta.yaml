@@ -31,11 +31,12 @@ requirements:
     - python
     - brotli
     - munkres
-    - unicodedata2 >=12.1.0  # [py<=37]
+    - unicodedata2 >=13.0.0  # [py<39]
 
 test:
   imports:
     - fontTools
+    - fontTools.ttLib
     - fontTools.cffLib
   commands:
     - pip check
