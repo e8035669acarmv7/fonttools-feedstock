@@ -18,7 +18,7 @@ build:
     - ttx = fontTools.ttx:main
     - pyftsubset = fontTools.subset:main
     - pyftmerge = fontTools.merge:main
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
