@@ -223,4 +223,6 @@ Feedstock Maintainers
 =====================
 
 * [@CJ-Wright](https://github.com/CJ-Wright/)
+* [@dopplershift](https://github.com/dopplershift/)
+* [@tacaswell](https://github.com/tacaswell/)
 
