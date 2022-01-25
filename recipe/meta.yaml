@@ -34,7 +34,7 @@ requirements:
     - python
     - brotli
     - munkres
-    - unicodedata2 >=13.0.0  # [py<39]
+    - unicodedata2 >=14.0.0  # [py<311]
 
 test:
   imports:
