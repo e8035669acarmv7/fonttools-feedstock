@@ -1,5 +1,5 @@
 {% set name = "fonttools" %}
-{% set version = "4.28.5" %}
+{% set version = "4.29.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fonttools-{{ version }}.zip
-  sha256: 545c05d0f7903a863c2020e07b8f0a57517f2c40d940bded77076397872d14ca
+  sha256: f4834250db2c9855c3385459579dbb5cdf74349ab059ea0e619359b65ae72037
 
 build:
   number: 0
@@ -34,7 +34,7 @@ requirements:
     - python
     - brotli
     - munkres
-    - unicodedata2 >=13.0.0  # [py<39]
+    - unicodedata2 >=14.0.0  # [py<311]
 
 test:
   imports:
