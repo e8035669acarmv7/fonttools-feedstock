@@ -11,7 +11,7 @@ source:
   sha256: 236b29aee6b113e8f7bee28779c1230a86ad2aac9a74a31b0aedf57e7dfb62a4
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py2k]
   entry_points:
     - fonttools = fontTools.__main__:main
