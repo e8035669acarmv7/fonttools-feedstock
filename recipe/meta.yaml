@@ -1,5 +1,5 @@
 {% set name = "fonttools" %}
-{% set version = "4.39.1" %}
+{% set version = "4.39.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fonttools-{{ version }}.zip
-  sha256: 51c72f26a5b79fc77d59f22e9d146350fbd1d107430ddda7b7665b1be38b16ad
+  sha256: e2d9f10337c9e3b17f9bce17a60a16a885a7d23b59b7f45ce07ea643e5580439
 
 build:
   number: 0
