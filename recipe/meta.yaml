@@ -1,5 +1,5 @@
 {% set name = "fonttools" %}
-{% set version = "4.51.0" %}
+{% set version = "4.52.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fonttools-{{ version }}.tar.gz
-  sha256: dc0673361331566d7a663d7ce0f6fdcbfbdc1f59c6e3ed1165ad7202ca183c68
+  sha256: 8c9204435aa6e5e9479a5ba4e669f05dea28b0c61958e0c0923cb164296d9329
 
 build:
   number: 0
@@ -26,6 +26,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cython                                 # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - cython
     - pip
